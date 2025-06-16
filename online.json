@@ -1,0 +1,13 @@
+{
+  "name": "service",
+  "script": "./service/app.js",
+  "exec_mode": "cluster_mode",
+  "instances": "5",
+  "log_date_format": "YYYY-MM-DD HH:mm:ss",
+  "max_memory_restart": "200M",
+  "listen_timeout": 30000,
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "3000"
+  }
+}

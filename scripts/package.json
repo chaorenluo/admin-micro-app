@@ -1,0 +1,32 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "scripts": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pnpm/types": "^1000.1.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "chalk": "4.1.0",
+    "commander": "^13.1.0",
+    "fast-glob": "^3.3.3",
+    "fs-extra": "^11.3.0",
+    "invariant": "^2.2.4",
+    "npmlog": "^7.0.1",
+    "ts-node": "^10.9.2",
+    "vite": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/invariant": "^2.2.37",
+    "@types/npmlog": "^7.0.0"
+  }
+}

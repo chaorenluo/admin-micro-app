@@ -1,0 +1,19 @@
+{
+  "name": "@apps/main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev scripts dev",
+    "build": "scripts build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@shared/common": "workspace:^",
+    "@shared/scss": "workspace:^",
+    "@shared/components": "workspace:^"
+  }
+}

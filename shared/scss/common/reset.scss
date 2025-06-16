@@ -1,0 +1,63 @@
+//reset
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td,th { padding: 0; }
+body {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: scroll;
+  line-height: 1.428;
+}
+input,button,select,textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+}
+textarea { resize: none; }
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select {
+  padding: 0;
+  margin: 0;
+}
+img { 
+  max-width: 100%;
+  border: 0;
+}
+ul,li,ol,dl,dd,dt {
+  list-style-position: outside;
+  list-style-type: none;
+  list-style-image: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover { color: $orange; }
+body,button,input,select,textarea {
+  // font-family: "PingFang SC", miui, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, 'Microsoft JhengHei UI', 'Microsoft Yahei', "微軟正黑體", sans-serif; 
+  font-family: 'Microsoft JhengHei UI', "微軟正黑體", "PingFang SC", miui, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, 'Microsoft Yahei', sans-serif;
+  font-size: $nfs;
+  color: $fc1;
+}
+html, body, #app {
+  height: 100%;
+}
+.abgc {
+  display: none;
+}
+#abgc {
+  display: none;
+}

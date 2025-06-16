@@ -1,0 +1,12 @@
+{
+  "extends": "@shared/tsconfig",
+  "compilerOptions": {
+    "paths": {
+      "modules/*": ["../../micro/modules/src/*"],
+      "@/*": ["./src/*"],
+      "@main/*": ["./src/*"]
+    },
+    "strict": false 
+  },
+  "include": ["src", "../../shared/tsconfig/typings","./auto-imports.d.ts"]
+}

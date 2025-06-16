@@ -1,0 +1,12 @@
+packages:
+  # 主应用
+  - "apps/*"
+
+  # 共享应用
+  - "micro/*"
+
+  # 共享模块
+  - "shared/*"
+
+  # 脚本模块
+  - "scripts"

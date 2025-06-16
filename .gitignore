@@ -1,0 +1,13 @@
+node_modules
+*.log
+dist
+.env
+stats.html
+/.vscode
+.idea
+.nx
+remoteEntry.json
+ports.json
+./ports.json
+.DS_Store
+*.d.ts

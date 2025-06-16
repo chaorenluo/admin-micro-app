@@ -1,0 +1,81 @@
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+//to right top fade
+.right-top-fade-enter-active,
+.right-top-fade-leave-active {
+  transition: top left .5s, opacity .2s ease-out;
+}
+.right-top-fade-enter-from,.right-top-fade-leave-to {
+  top:-100%;
+  right:-100%;
+  opacity: 0;
+}
+
+// left-fade
+.left-fade-enter-active,
+.left-fade-leave-active {
+  transition: transform .5s, opacity .2s ease-out;
+}
+.left-fade-enter-from,.left-fade-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+@keyframes roll {
+  100% { transform: rotateZ(360deg); }
+}
+
+@keyframes countOpacity {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes spark {
+  0%, 100% {
+    color: $white;
+    background: $orange;
+  }
+  50% {
+    color: $fc1;
+    background: $white;
+  }
+}
+
+@keyframes slideUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes leftFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* zoom-fade */
+.zoom-fade-enter-active,
+.zoom-fade-leave-active {
+  transition: transform .2s, opacity .3s ease-out;
+}
+.zoom-fade-enter-from {
+  opacity: 0;
+  transform: scale(.92);
+}
+.zoom-fade-leave-to {
+  opacity: 0;
+  transform: scale(1.06);
+}

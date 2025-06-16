@@ -1,0 +1,15 @@
+{
+  "name": "@micro/child",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev scripts dev",
+    "build": "scripts build"
+  },
+  "dependencies": {
+    "@shared/common": "workspace:^",
+    "@shared/scss": "workspace:^",
+    "@shared/components": "workspace:^"
+  }
+}

@@ -1,0 +1,179 @@
+$comlh: 1.428;
+
+//字号
+$xsfs: 10px;
+$nfs: 12px; //正常字號
+$mfs: 14px;	//中
+$bfs: 16px;	//大
+$fs-10: 10px;
+$fs-12: 12px;
+$fs-13: 13px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;	//大
+$fs-20: 20px;	//大
+$fs-22: 22px;	//大
+$fs-24: 24px;	//大
+$fs-26: 26px;	//大
+$fs-28: 28px;	//大
+$fs-30: 30px;	//大
+$fs-32: 32px;	//大
+$fs-36: 36px;	//大
+$fs-40: 40px;	//大
+$fs-48: 48px;	//大
+$fs-56: 56px;	//大
+$fs-72: 72px;	//大
+
+$base-margin: 5px;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+
+// 主要色调
+$primary: #409eff;
+$success: #67c23a;
+$warning: #e6a23c;
+$danger: #f56c6c;
+$error: #f56c6c;
+$info: #909399;
+$lblue: #deeafd;
+
+//支付方式，社交平台
+$facebook: #3c5b99;
+$line: #00c300;
+$whatsapp: #4dc247;
+$paypal: #002b8a;
+$alipay: #1777ff;
+$hkalipay: #00adee;
+$wechat: #00b100;
+$payme: #f63d3d;
+
+//品牌色
+$lorange: #ffefe5;
+$orange: #f60; //品牌
+$orange2: #ff892d; //品牌2 （悬停）
+$orange3: #d24d02; //品牌3 （点击）
+$outline_orange: rgba(255, 102, 0, .4);
+
+// 橙黄
+$orange4: #ffaa5e; // 特殊场景（分割线悬浮等）
+$orange5: #ffc58b; // 一般禁用
+$orange6: #ffdfbb; // 文字禁用
+$orange7: #fff5e9; // 浅色/白底悬停
+$yellow: #ffcb00; //常规提示
+$dyellow: #b18540; // 原版
+
+//红
+$red: #ff596b; //错误提示1
+$red2: #f00; //错误提示2（原版）
+$lred: #ffe9e9; //浅色背景
+$dred: #cd0000;//（原版）
+
+//蓝
+$dblue: #4c94fd; //常规
+$dblue2: #6babfd; //悬浮
+$dblue4: #2e69cf; //点击
+$dblue5: #a9d4fe; //禁用
+$lblue1: #e9f5ff; //浅色背景
+$blue: #00cafd; //原版
+$lblue: #deeafd; //原版
+$dblue3: #04d; //原版
+
+//紫
+$purple: #8174ff;
+
+// 粉
+$pink: #fd4ca2;
+
+//绿
+$green: #00d96d; //常规
+$green2: #2ce180; //悬停
+$green3: #00b662; //点击
+$green4: #84f0ae; //禁用
+$dgreen: #279005; //基础色深（原版）
+$lgreen: #e9fff0; //浅色背景
+
+//基础颜色 （文本类）
+$fc1: #1d2129; //主要文本、强调
+$fc2: #4e5969; //常规文本、次强调
+$fc3: #86909c; //次要文本
+$fc4: #666;  // 次要文本（原版）
+$fc5: #c9cdd4; //置灰信息
+$white: #fff;
+
+// 灰色调（背景、边框）
+$lgray: #f5f5f5; //背景色（原版）
+$lgray2: #f2f3f5; //背景、常规填充、白底悬停
+$lgray3: #f7f8fa; //背景、禁用底色
+$llgray: #fbfbfb; //块状hover（原版）
+$borderColor: #e5e6eb; //线条、灰底悬停填充
+// $borderColor1: #e5e6e8; //分割线
+$gray: #4e5969; //强调、图标等填充
+$gray2: #86909c; //线条、按钮描边或重填充
+$mgray: #c9cdd4; //线条hover、特殊场景填充
+$mgray2: #bbb; //禁用底色（原版）
+$mgray3: #b6b6b6; //未选中颜色（原版）
+
+// 链接
+$afc: $dblue; //a标签
+$visited: #2d85c4; //a标签看过后颜色
+
+$comradius: 4px;
+$comshadow: 0 1px 5px rgba(0, 0, 0, .2); //统一阴影
+$comPop: rgba(0, 0, 0, .4);
+$comMask: rgba(0, 0, 0, .8);
+$comborder: 1px solid $borderColor;
+$com_shadow_border: 0 0 0 1px $borderColor;
+
+//zindex
+$zidx_hd: 10; //頭部選擇搜索
+$zidx_hd_top: 15; //頭部最頂部
+$zidx_hd_search: $zidx_hd_top - 1; //頭部游戏搜索
+$zidx_pb: 50; //彈框
+
+$page_width: 1000px;
+$input_h32: 32px;
+$input_h24: 24px;
+$input_w80: 80px;
+$input_w120: 120px;
+
+@mixin input($width: 100%, $height: 32px) { //模擬input樣式
+  width: $width;
+  height: $height;
+  padding: 0 10px;
+  font-size: inherit;
+  color: $fc1;
+  background: #fff;
+  border: $comborder;
+  border-radius: $comradius;
+  outline: none;
+  &:hover {
+    border-color: $mgray;
+  }
+  &:focus {
+    border-color: $orange;
+    box-shadow: 0 0 3px $outline_orange;
+  }
+  &::-webkit-input-placeholder {
+    color: $mgray3;
+  }
+  &:disabled {
+    color: $fc3;
+    background: $borderColor;
+  }
+  &.error {
+    border-color: $red;
+    box-shadow: 0 0 5px $red;
+  }
+}
+
+@mixin comShadow($z: 20) {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z;
+  background: rgba(0, 0, 0, .8);
+}
