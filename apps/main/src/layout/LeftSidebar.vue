@@ -1,8 +1,6 @@
 <template>
   <a-layout-sider :width="210" class="main-sidebar flex flex-colunm ">
-    <div class="flex align-center space-center com" style="height: 50px;">
-      <img src="../assets/8591.png" alt="8591" style="width:128px;">
-    </div>
+    <div class="flex align-center space-center com" style="height: 50px;" />
     <a-scrollbar class="pdl5 pdr5 flex1">
       <a-menu
         auto-open
